@@ -398,9 +398,9 @@ static WTStoreKit *sharedMyManager = nil;
     }
     
     BOOL useSandbox = NO;
-    if(DEBUG){
+#if DEBUG
         useSandbox = YES;
-    }
+#endif
     
     [self validateReceiptsWithAppStore:requestData withSandbox:useSandbox withCompletion:completion];
 }
@@ -451,9 +451,9 @@ static WTStoreKit *sharedMyManager = nil;
         }
         
         BOOL useSandbox = NO;
-        if(DEBUG){
+#if DEBUG
             useSandbox = YES;
-        }
+#endif
         
         [self validateReceiptsWithAppStore:requestData withSandbox:useSandbox withCompletion:^(BOOL success, NSArray *receiptsInfoArray) {
             
@@ -494,9 +494,9 @@ static WTStoreKit *sharedMyManager = nil;
         }
         
         BOOL useSandbox = NO;
-        if(DEBUG){
+#if DEBUG
             useSandbox = YES;
-        }
+#endif
         
         [self validateReceiptsWithAppStore:requestData withSandbox:useSandbox withCompletion:completion];
         
