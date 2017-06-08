@@ -1,0 +1,26 @@
+PODS:
+  - AGWindowView (0.1.9)
+  - Expecta (1.0.5)
+  - Specta (1.0.6)
+  - WTLibrary-iOS-ObjC (0.1.0):
+    - AGWindowView (~> 0.1)
+
+DEPENDENCIES:
+  - AGWindowView (~> 0.1)
+  - Expecta
+  - Specta
+  - WTLibrary-iOS-ObjC (from `../`)
+
+EXTERNAL SOURCES:
+  WTLibrary-iOS-ObjC:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AGWindowView: 08dc8d448b8c96430e78b3945a9c2cf5b0fde754
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
+  WTLibrary-iOS-ObjC: daf5d8b7783a4871bddd5ac0779db9f58394a98b
+
+PODFILE CHECKSUM: 9036499c69d34b5a5a8a78814c89a7a2519d3829
+
+COCOAPODS: 1.2.0

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'WTLibrary-iOS-ObjC'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of WTLibrary-iOS-ObjC.'
+  s.summary          = 'A simple life with WTLibrary-iOS-ObjC.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
+A simple life with WTLibrary-iOS-ObjC.
                        DESC
 
   s.homepage         = 'https://github.com/wtanuw/WTLibrary-iOS-ObjC'
@@ -39,4 +40,5 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AGWindowView', '~> 0.1'#, 'FMDB', '~> 2.0'
 end
