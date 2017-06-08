@@ -1,12 +1,17 @@
 PODS:
   - AGWindowView (0.1.9)
   - Expecta (1.0.5)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - Reachability (3.2)
   - Specta (1.0.6)
   - WTLibrary-iOS-ObjC (0.1.0):
     - AGWindowView (~> 0.1)
+    - FMDB (~> 2.0)
+    - Reachability (~> 3.2)
 
 DEPENDENCIES:
-  - AGWindowView (~> 0.1)
   - Expecta
   - Specta
   - WTLibrary-iOS-ObjC (from `../`)
@@ -18,9 +23,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AGWindowView: 08dc8d448b8c96430e78b3945a9c2cf5b0fde754
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
-  WTLibrary-iOS-ObjC: daf5d8b7783a4871bddd5ac0779db9f58394a98b
+  WTLibrary-iOS-ObjC: f218a1730c5ab58322af6c75aa5f3a085ea61058
 
-PODFILE CHECKSUM: 9036499c69d34b5a5a8a78814c89a7a2519d3829
+PODFILE CHECKSUM: e4259a0d8065704f00e646b08f49ac5a656a3ee3
 
 COCOAPODS: 1.2.0

@@ -3,7 +3,7 @@ use_frameworks!
 target 'WTLibrary-iOS-ObjC_Example' do
   pod 'WTLibrary-iOS-ObjC', :path => '../'
   
-  pod 'AGWindowView', '~> 0.1'
+  #pod 'AGWindowView', '~> 0.1'
   #pod 'FMDB'
   
   target 'WTLibrary-iOS-ObjC_Tests' do
