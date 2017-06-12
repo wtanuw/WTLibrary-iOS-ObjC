@@ -8,6 +8,7 @@
 
 #import "metadataRetriever.h"
 #import <CoreFoundation/CoreFoundation.h>
+#import "WTMacro.h"
 
 #define UseMetaDataLog 1
 #if UseMetaDataLog && WATLOG_DEBUG_ENABLE
@@ -38,7 +39,7 @@
     AudioFileID fileID  = nil;
     OSStatus err        = noErr;
     
-    err = AudioFileOpenURL( (CFURLRef) fileURL, kAudioFileReadPermission, 0, &fileID );
+    err = AudioFileOpenURL( (CFURLRef) CFBridgingRetain(fileURL), kAudioFileReadPermission, 0, &fileID );
     if (err != noErr) {
         MetaDataLog(@"AudioFileOpenURL failed");
     }
@@ -295,9 +296,7 @@
     for(AVMetadataItem *item in tagArray){
         
         NSString *keySpace = item.keySpace;
-        NSString *dkey = [item.key copyWithZone:nil];
-        NSString *key = [NSString stringWithFormat:@"%@", dkey];
-        [dkey release];
+        NSString *key = [NSString stringWithFormat:@"%@", (NSString*)item.key];
         
 //        NSLog(@"%@=%@", key, [item.value copyWithZone:nil]);
 //        NSLog(@"%@=%@", key, item);
@@ -306,11 +305,10 @@
         
         if (key && [keySpace isEqualToString:AVMetadataKeySpaceID3]){
             if([key isEqualToString:@"1431522388"] ){ // ios < 8
-                NSDictionary *data = [[item.value copyWithZone:nil] autorelease];
+                NSDictionary *data = [NSDictionary dictionaryWithDictionary:(NSDictionary*)item.value];
                 return [data objectForKey:@"text"];
             }else if([key isEqualToString:@"5590100"]){ // ios < 8
-                NSDictionary *data = [[item.value copyWithZone:nil] autorelease];
-                return [data objectForKey:@"text"];
+                NSDictionary *data = [NSDictionary dictionaryWithDictionary:(NSDictionary*)item.value];                return [data objectForKey:@"text"];
             }else if([key isEqualToString:@"USLT"]){ // ios == 8
                 return (NSString*)item.value;
             }else if([key isEqualToString:@"ULT"]){ // ios == 8
