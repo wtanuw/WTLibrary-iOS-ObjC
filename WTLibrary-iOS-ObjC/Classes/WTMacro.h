@@ -272,8 +272,8 @@ return _sharedObject; \
 
 #define UI_INTERFACE_ORIENTATION_IS_PORTRAIT_STATUSBAR()  UIInterfaceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])
 #define UI_INTERFACE_ORIENTATION_IS_LANDSCAPE_STATUSBAR() UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])
-#define UI_INTERFACE_ORIENTATION_IS_PORTRAIT()  UIInterfaceOrientationIsPortrait([[UIDevice currentDevice] orientation])
-#define UI_INTERFACE_ORIENTATION_IS_LANDSCAPE() UIInterfaceOrientationIsLandscape([[UIDevice currentDevice] orientation])
+#define UI_INTERFACE_ORIENTATION_IS_PORTRAIT()  UIDeviceOrientationIsPortrait([[UIDevice currentDevice] orientation])
+#define UI_INTERFACE_ORIENTATION_IS_LANDSCAPE() UIDeviceOrientationIsLandscape([[UIDevice currentDevice] orientation])
 
 #define UI_INTERFACE_SCALE()               (([[UIScreen mainScreen] respondsToSelector: @selector(scale)])?[UIScreen mainScreen].scale:1.0)
 #define UI_INTERFACE_RETINA()               ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] && (UI_INTERFACE_SCALE() >= 2.0)?YES:NO)
