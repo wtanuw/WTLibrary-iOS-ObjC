@@ -201,8 +201,8 @@
 //#else
 //#define WatNicoLog( s, ... )
 //#endif
-
-void WTSharedBoxNicoLog(NSString *s);//in WTSharedBox
+//
+//void WTSharedBoxNicoLog(NSString *s);//in WTSharedBox
 
 #ifdef WTSharedBox_VERSION
 #if WATNICOLOG_DEBUG_ENABLE
