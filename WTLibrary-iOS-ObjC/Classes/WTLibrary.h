@@ -24,6 +24,7 @@ extern "C" {
 #import "NSMutableArray+StackAdditions.h"
 #import "NSMutableArray+QueueAdditions.h"
 #import "UIImageView+Rotate.h"
+#import "NSString+Size.h"
     
 #ifdef __cplusplus
 }
