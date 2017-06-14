@@ -16,4 +16,6 @@
 
 - (CGSize)boundingRectWithLabel:(UILabel *)label;
 
+- (CGSize)boundingRectWithFont:(UIFont *)font lineBreakMode:(NSLineBreakMode)lineBreakMode constraintSize:(CGSize)constrainedSize;
+
 @end

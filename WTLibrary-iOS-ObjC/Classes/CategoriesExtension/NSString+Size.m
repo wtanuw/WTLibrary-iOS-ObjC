@@ -44,4 +44,21 @@
     return CGSizeMake(ceilf(boundingRect.size.width), ceilf(boundingRect.size.height));
 }
 
+- (CGSize)boundingRectWithFont:(UIFont *)font lineBreakMode:(NSLineBreakMode)lineBreakMode constraintSize:(CGSize)constrainedSize
+{
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineBreakMode = lineBreakMode;
+    
+    // dictionary of attributes
+    NSDictionary *attributes = @{NSFontAttributeName:font,
+                                 NSParagraphStyleAttributeName: paragraphStyle};
+    
+    CGRect boundingRect = [self boundingRectWithSize:constrainedSize
+                                             options:NSStringDrawingUsesLineFragmentOrigin
+                                          attributes:attributes
+                                             context:nil];
+    
+    return CGSizeMake(ceilf(boundingRect.size.width), ceilf(boundingRect.size.height));
+}
+
 @end

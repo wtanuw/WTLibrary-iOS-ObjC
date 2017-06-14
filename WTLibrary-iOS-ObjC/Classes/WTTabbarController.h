@@ -37,4 +37,5 @@ typedef enum {
 - (void)showNewTabBar;//Override
 - (void)adjustTabbar;//Override
 
+- (void)buttonClicked:(id)sender;//Override
 @end
