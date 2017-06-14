@@ -128,7 +128,11 @@
 {
 	return ( [_insertItems count] + [_deleteItems count] + [_moveItems count] + [_reloadItems count] );
 }
-
+#if __LP64__
+#define SCRIBBLE_MARK 0x5555555555555555
+#else
+#define SCRIBBLE_MARK 0x55555555
+#endif
 - (void) updateNewGridDataAndCreateMappingTables
 {
 #define GUARD_ITEMS 1
@@ -136,7 +140,7 @@
 # define TEST_GUARD(array,count)                                                    \
     for ( int j = 0; j < 8; j++ )                                                   \
     {                                                                               \
-        NSAssert((array)[(count)+j] == 0x55555555, @"Overwrote the guard area!" );  \
+        NSAssert((array)[(count)+j] == SCRIBBLE_MARK, @"Overwrote the guard area!" );  \
     }                                                                               \
     do {} while (0)
 #else
@@ -182,7 +186,7 @@
 #endif
 		memset_pattern4( _oldToNewIndexMap, &stamp, _oldGridData.numberOfItems * sizeof(NSUInteger) );
 #if GUARD_ITEMS
-		NSAssert(_oldToNewIndexMap[_oldGridData.numberOfItems] == 0x55555555, @"Eeek! Scribbling on guards didn't work!");
+		NSAssert(_oldToNewIndexMap[_oldGridData.numberOfItems] == SCRIBBLE_MARK, @"Eeek! Scribbling on guards didn't work!");
 #endif
 	}
 	else
@@ -203,7 +207,7 @@
 #endif
 		memset_pattern4( _newToOldIndexMap, &stamp, _newGridData.numberOfItems * sizeof(NSUInteger) );
 #if GUARD_ITEMS
-		NSAssert(_newToOldIndexMap[_newGridData.numberOfItems] == 0x55555555, @"Eeek! Scribbling on guards didn't work!");
+		NSAssert(_newToOldIndexMap[_newGridData.numberOfItems] == SCRIBBLE_MARK, @"Eeek! Scribbling on guards didn't work!");
 #endif
 	}
 	else

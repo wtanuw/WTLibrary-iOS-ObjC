@@ -10,7 +10,7 @@
 #import <CoreFoundation/CoreFoundation.h>
 #import "WTMacro.h"
 
-#define UseMetaDataLog 1
+#define UseMetaDataLog 0
 #if UseMetaDataLog && WATLOG_DEBUG_ENABLE
 #    define MetaDataLog(...) NSLog(__VA_ARGS__)
 #else
