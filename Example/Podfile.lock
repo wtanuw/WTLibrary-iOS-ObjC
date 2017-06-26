@@ -25,28 +25,40 @@ PODS:
   - Specta (1.0.6)
   - WTLibrary-iOS-ObjC (0.2.0):
     - WTLibrary-iOS-ObjC/WTMaster (= 0.2.0)
-  - WTLibrary-iOS-ObjC/AQGridViewHorizontal (0.2.0)
-  - WTLibrary-iOS-ObjC/CategoriesExtension (0.2.0)
-  - WTLibrary-iOS-ObjC/CategoriesExtensionMD5 (0.2.0)
-  - WTLibrary-iOS-ObjC/MetadataRetriever (0.2.0)
+  - WTLibrary-iOS-ObjC/AQGridViewHorizontal (0.2.0):
+    - WTLibrary-iOS-ObjC/WTMaster
+  - WTLibrary-iOS-ObjC/CategoriesExtension (0.2.0):
+    - WTLibrary-iOS-ObjC/WTMaster
+  - WTLibrary-iOS-ObjC/CategoriesExtensionMD5 (0.2.0):
+    - WTLibrary-iOS-ObjC/WTMaster
+  - WTLibrary-iOS-ObjC/MetadataRetriever (0.2.0):
+    - WTLibrary-iOS-ObjC/WTMaster
   - WTLibrary-iOS-ObjC/WTDatabase (0.2.0):
     - FMDB (~> 2.0)
+    - WTLibrary-iOS-ObjC/WTMaster
   - WTLibrary-iOS-ObjC/WTDropbox (0.2.0):
     - ObjectiveDropboxOfficial
+    - WTLibrary-iOS-ObjC/WTMaster
   - WTLibrary-iOS-ObjC/WTGoogle (0.2.0):
     - GoogleAPIClientForREST/Drive (~> 1.1.1)
     - GTMAppAuth
     - GTMOAuth2 (~> 1.1.4)
-  - WTLibrary-iOS-ObjC/WTLocation (0.2.0)
-  - WTLibrary-iOS-ObjC/WTMaster (0.2.0):
-    - WTLibrary-iOS-ObjC/CategoriesExtension
-  - WTLibrary-iOS-ObjC/WTSNS (0.2.0)
+    - WTLibrary-iOS-ObjC/WTMaster
+  - WTLibrary-iOS-ObjC/WTLocation (0.2.0):
+    - WTLibrary-iOS-ObjC/WTMaster
+  - WTLibrary-iOS-ObjC/WTMaster (0.2.0)
+  - WTLibrary-iOS-ObjC/WTSNS (0.2.0):
+    - WTLibrary-iOS-ObjC/WTMaster
   - WTLibrary-iOS-ObjC/WTStoreKit (0.2.0):
     - Reachability (~> 3.2)
+    - WTLibrary-iOS-ObjC/WTMaster
   - WTLibrary-iOS-ObjC/WTSwipeModalView (0.2.0):
     - AGWindowView (~> 0.1)
-  - WTLibrary-iOS-ObjC/WTUIKit (0.2.0)
-  - WTLibrary-iOS-ObjC/WTUtaPlayer (0.2.0)
+    - WTLibrary-iOS-ObjC/WTMaster
+  - WTLibrary-iOS-ObjC/WTUIKit (0.2.0):
+    - WTLibrary-iOS-ObjC/WTMaster
+  - WTLibrary-iOS-ObjC/WTUtaPlayer (0.2.0):
+    - WTLibrary-iOS-ObjC/WTMaster
 
 DEPENDENCIES:
   - Expecta
@@ -82,7 +94,7 @@ SPEC CHECKSUMS:
   ObjectiveDropboxOfficial: 69d6d3831e41cf4918e0374b0d1fcb620b238791
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
-  WTLibrary-iOS-ObjC: ccc257072d940f62b74a2cde512d50ebcc5cf006
+  WTLibrary-iOS-ObjC: 31aa030c3af2f5e462b9804e45fb2d3ac5138e80
 
 PODFILE CHECKSUM: a22775e2fd73002b13c3d5d397d172cbd8d71325
 

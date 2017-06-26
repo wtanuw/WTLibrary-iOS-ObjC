@@ -80,7 +80,7 @@ end
 s.subspec 'MetadataRetriever' do |subspec|
 subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/MetadataRetriever/*.{h,m}'
-subspec.frameworks = 'AudioToolbox', 'AssetsLibrary', 'AVFoundation', 'UIKit',
+subspec.frameworks = 'AudioToolbox', 'AssetsLibrary', 'AVFoundation', 'UIKit'
 end
 
 ##################################################
@@ -108,10 +108,7 @@ subspec.dependency 'GTMOAuth2', '~> 1.1.4'
 subspec.dependency 'GTMAppAuth'
 #subspec.dependency 'Google/SignIn'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/*.{h,m}'
-subspec.vendored_frameworks = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleAppUtilities.framework'
-subspec.vendored_frameworks = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSignIn.framework'
-subspec.vendored_frameworks = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSignInDependencies.framework'
-subspec.vendored_frameworks = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSymbolUtilities.framework'
+subspec.vendored_frameworks = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleAppUtilities.framework', 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSignIn.framework', 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSignInDependencies.framework', 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSymbolUtilities.framework'
 subspec.resource = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSignIn.bundle'
 subspec.frameworks = 'SafariServices', 'SystemConfiguration'
 end
