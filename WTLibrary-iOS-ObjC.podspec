@@ -48,7 +48,6 @@ A simple life with WTLibrary-iOS-ObjC.
 ##################################################
 
 s.subspec 'WTMaster' do |subspec|
-subspec.dependency 'WTLibrary-iOS-ObjC/CategoriesExtension'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/WT*.{h,m}'
 subspec.frameworks = 'UIKit', 'QuartzCore'
 end
@@ -56,7 +55,7 @@ end
 ##################################################
 
 s.subspec 'AQGridViewHorizontal' do |subspec|
-#subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
+subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/AQGridViewHorizontal/*.{h,m}'
 subspec.frameworks = 'UIKit', 'QuartzCore'
 end
@@ -64,7 +63,7 @@ end
 ##################################################
 
 s.subspec 'CategoriesExtension' do |subspec|
-#subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
+subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/CategoriesExtension/*.{h,m}'
 subspec.frameworks = 'UIKit', 'QuartzCore'
 end
@@ -72,22 +71,22 @@ end
 ##################################################
 
 s.subspec 'CategoriesExtensionMD5' do |subspec|
-#subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
+subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/CategoriesExtensionMD5/*.{h,m}'
 end
 
 ##################################################
 
 s.subspec 'MetadataRetriever' do |subspec|
-#subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
+subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/MetadataRetriever/*.{h,m}'
-subspec.frameworks = 'AudioToolbox', 'AssetsLibrary', 'AVFoundation'
+subspec.frameworks = 'AudioToolbox', 'AssetsLibrary', 'AVFoundation', 'UIKit',
 end
 
 ##################################################
 
 s.subspec 'WTDatabase' do |subspec|
-#subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
+subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
 subspec.dependency 'FMDB', '~> 2.0'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/WTDatabase/*.{h,m}'
 end
@@ -95,7 +94,7 @@ end
 ##################################################
 
 s.subspec 'WTDropbox' do |subspec|
-#subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
+subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
 subspec.dependency 'ObjectiveDropboxOfficial'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/WTDropbox/*.{h,m}'
 end
@@ -103,7 +102,7 @@ end
 ##################################################
 
 s.subspec 'WTGoogle' do |subspec|
-#subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
+subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
 subspec.dependency 'GoogleAPIClientForREST/Drive', '~> 1.1.1'
 subspec.dependency 'GTMOAuth2', '~> 1.1.4'
 subspec.dependency 'GTMAppAuth'
@@ -120,14 +119,14 @@ end
 ##################################################
 
 s.subspec 'WTLocation' do |subspec|
-#subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
+subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/WTLocation/*.{h,m}'
 end
 
 ##################################################
 
 s.subspec 'WTSNS' do |subspec|
-#subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
+subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/WTSNS/*.{h,m}'
 subspec.frameworks = 'Twitter', 'Social', 'Accounts'
 end
@@ -135,7 +134,7 @@ end
 ##################################################
 
 s.subspec 'WTStoreKit' do |subspec|
-#subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
+subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
 subspec.dependency 'Reachability', '~> 3.2'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/WTStoreKit/*.{h,m}'
 subspec.frameworks = 'StoreKit', 'Security'
@@ -144,7 +143,7 @@ end
 ##################################################
 
 s.subspec 'WTSwipeModalView' do |subspec|
-#subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
+subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
 subspec.dependency 'AGWindowView', '~> 0.1'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/WTSwipeModalView/*.{h,m}'
 end
@@ -152,7 +151,7 @@ end
 ##################################################
 
 s.subspec 'WTUIKit' do |subspec|
-#subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
+subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/WTUIKit/*.{h,m}'
 subspec.frameworks = 'UIKit', 'QuartzCore'
 end
@@ -160,7 +159,7 @@ end
 ##################################################
 
 s.subspec 'WTUtaPlayer' do |subspec|
-#subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
+subspec.dependency 'WTLibrary-iOS-ObjC/WTMaster'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/WTUtaPlayer/*.{h,m}'
 subspec.frameworks = 'AVFoundation'
 end
