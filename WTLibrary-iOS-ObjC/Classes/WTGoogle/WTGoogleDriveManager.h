@@ -10,9 +10,9 @@
 #import "GTMOAuth2ViewControllerTouch.h"
 #import "GTLRDrive.h"
 #import "WTMacro.h"
-//#import <Google/SignIn.h>
+#import <Google/SignIn.h>
 //#import <GoogleSignIn/GoogleSignIn.h>
-#import "GoogleSignIn/GoogleSignIn.h"
+//#import "GoogleSignIn/GoogleSignIn.h"
 //#import "GoogleSignIn/GoogleSignIn.h"
 
 
