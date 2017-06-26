@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1CF888B79710289F892F86DB /* Pods_WTLibrary_iOS_ObjC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTLibrary_iOS_ObjC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A59BC3C1ECFE3EE89158D83 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2A59BC3C1ECFE3EE89158D83 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2E1357089C58DFB7C77AEE54 /* Pods-WTLibrary-iOS-ObjC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTLibrary-iOS-ObjC_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTLibrary-iOS-ObjC_Example/Pods-WTLibrary-iOS-ObjC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		38D8CF177AB25E6001D18C2A /* Pods-WTLibrary-iOS-ObjC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTLibrary-iOS-ObjC_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTLibrary-iOS-ObjC_Example/Pods-WTLibrary-iOS-ObjC_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WTLibrary-iOS-ObjC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WTLibrary-iOS-ObjC_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,9 +64,9 @@
 		8265B14908D755385A50706B /* Pods-WTLibrary-iOS-ObjC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTLibrary-iOS-ObjC_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTLibrary-iOS-ObjC_Tests/Pods-WTLibrary-iOS-ObjC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1A0E55F15223F40C3EF3FAB /* Pods_WTLibrary_iOS_ObjC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTLibrary_iOS_ObjC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C552895A4DB809A72062EC58 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C552895A4DB809A72062EC58 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C6919CEC33F936D4EC3A85EF /* Pods-WTLibrary-iOS-ObjC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTLibrary-iOS-ObjC_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTLibrary-iOS-ObjC_Tests/Pods-WTLibrary-iOS-ObjC_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DDC29ACE1D511681EB1FB920 /* WTLibrary-iOS-ObjC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "WTLibrary-iOS-ObjC.podspec"; path = "../WTLibrary-iOS-ObjC.podspec"; sourceTree = "<group>"; };
+		DDC29ACE1D511681EB1FB920 /* WTLibrary-iOS-ObjC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "WTLibrary-iOS-ObjC.podspec"; path = "../WTLibrary-iOS-ObjC.podspec"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +209,7 @@
 				6003F588195388D20070C39A /* Resources */,
 				C2FF49C70C02D346F66F2CF3 /* [CP] Embed Pods Frameworks */,
 				9B9B80D775F9723FA7DB4E4A /* [CP] Copy Pods Resources */,
+				88AF85D91F00FEF8000AFF68 /* Run Script Increase build version */,
 			);
 			buildRules = (
 			);
@@ -341,6 +342,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		88AF85D91F00FEF8000AFF68 /* Run Script Increase build version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script Increase build version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
 		};
 		9B9B80D775F9723FA7DB4E4A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
