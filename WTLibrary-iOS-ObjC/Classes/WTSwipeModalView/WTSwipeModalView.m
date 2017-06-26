@@ -389,6 +389,7 @@
     [toView addSubview:self];
     [toView bringSubviewToFront:self];
     [_agWindow.superview bringSubviewToFront:_agWindow];
+//    self.parentViewWindow = _agWindow;
     
     //    [self performBlock:^{
     [UIView animateWithDuration:0.4

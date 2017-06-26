@@ -19,12 +19,19 @@ extern "C" {
 #import "WTPath.h"
 #import "WTBox.h"
 #import "WTSharedBox.h"
-#import "NSString+MD5Digest.h"
-#import "NSObject+PWObject.h"
-#import "NSMutableArray+StackAdditions.h"
+    
+//#import "NSString+MD5Digest.h"
+    
+#import "NSData+Base64.h"
 #import "NSMutableArray+QueueAdditions.h"
-#import "UIImageView+Rotate.h"
+#import "NSMutableArray+ShiftAdditions.h"
+#import "NSMutableArray+StackAdditions.h"
+#import "NSObject+PWObject.h"
 #import "NSString+Size.h"
+#import "UIImage+NSCoding.h"
+#import "UIImageView+Rotate.h"
+#import "UIView+Additions.h"
+#import "UIView+MGEasyFrame.h"
     
 #ifdef __cplusplus
 }

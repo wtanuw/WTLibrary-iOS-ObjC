@@ -12,6 +12,7 @@
 
 #import "WTStoreKit.h"
 //#import "WTStoreKitVerification.h"
+#import "WTMacro.h"
 #import "Reachability.h"
 #import "NSData+Base64.h"
 #import <Security/Security.h>

@@ -11,7 +11,7 @@
 #endif
 
 #import "NSMutableArray+StackAdditions.h"
-#import "WTLibrary.h"
+#import "WTMacro.h"
 
 @implementation NSMutableArray (StackAdditions)
 

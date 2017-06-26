@@ -11,7 +11,7 @@
 #endif
 
 #import "NSMutableArray+QueueAdditions.h"
-#import "WTLibrary.h"
+#import "WTMacro.h"
 
 @implementation NSMutableArray (QueueAdditions)
 

@@ -1,20 +1,99 @@
 PODS:
   - AGWindowView (0.1.9)
+  - AppAuth (0.9.1)
   - Expecta (1.0.5)
-  - FMDB (2.6.2):
-    - FMDB/standard (= 2.6.2)
-  - FMDB/standard (2.6.2)
+  - FirebaseAnalytics (3.9.0):
+    - FirebaseCore (~> 3.6)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.6.0):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.10):
+    - FirebaseCore (~> 3.6)
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
+  - Google/Core (3.1.0):
+    - FirebaseAnalytics (~> 3.2)
+  - Google/SignIn (3.1.0):
+    - Google/Core
+    - GoogleSignIn (~> 4.0)
+  - GoogleAPIClientForREST/Core (1.1.1):
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleAPIClientForREST/Drive (1.1.1):
+    - GoogleAPIClientForREST/Core
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleSignIn (4.0.2):
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.1):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.1)
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
+  - GTMAppAuth (0.6.1):
+    - AppAuth (~> 0.9.0)
+    - GTMSessionFetcher (~> 1.1)
+  - GTMOAuth2 (1.1.4):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.1.10):
+    - GTMSessionFetcher/Full (= 1.1.10)
+  - GTMSessionFetcher/Core (1.1.10)
+  - GTMSessionFetcher/Full (1.1.10):
+    - GTMSessionFetcher/Core (= 1.1.10)
+  - ObjectiveDropboxOfficial (3.0.15)
   - Reachability (3.2)
   - Specta (1.0.6)
-  - WTLibrary-iOS-ObjC (0.1.0):
-    - AGWindowView (~> 0.1)
+  - WTLibrary-iOS-ObjC (0.2.0):
+    - WTLibrary-iOS-ObjC/WTMaster (= 0.2.0)
+  - WTLibrary-iOS-ObjC/AQGridViewHorizontal (0.2.0)
+  - WTLibrary-iOS-ObjC/CategoriesExtension (0.2.0)
+  - WTLibrary-iOS-ObjC/CategoriesExtensionMD5 (0.2.0)
+  - WTLibrary-iOS-ObjC/MetadataRetriever (0.2.0)
+  - WTLibrary-iOS-ObjC/WTDatabase (0.2.0):
     - FMDB (~> 2.0)
+  - WTLibrary-iOS-ObjC/WTDropbox (0.2.0):
+    - ObjectiveDropboxOfficial
+  - WTLibrary-iOS-ObjC/WTGoogle (0.2.0):
+    - Google/SignIn
+    - GoogleAPIClientForREST/Drive (~> 1.1.1)
+    - GTMAppAuth
+    - GTMOAuth2 (~> 1.1.4)
+  - WTLibrary-iOS-ObjC/WTLocation (0.2.0)
+  - WTLibrary-iOS-ObjC/WTMaster (0.2.0):
+    - WTLibrary-iOS-ObjC/CategoriesExtension
+  - WTLibrary-iOS-ObjC/WTSNS (0.2.0)
+  - WTLibrary-iOS-ObjC/WTStoreKit (0.2.0):
     - Reachability (~> 3.2)
+  - WTLibrary-iOS-ObjC/WTSwipeModalView (0.2.0):
+    - AGWindowView (~> 0.1)
+  - WTLibrary-iOS-ObjC/WTUIKit (0.2.0)
+  - WTLibrary-iOS-ObjC/WTUtaPlayer (0.2.0)
 
 DEPENDENCIES:
   - Expecta
   - Specta
   - WTLibrary-iOS-ObjC (from `../`)
+  - WTLibrary-iOS-ObjC/AQGridViewHorizontal (from `../`)
+  - WTLibrary-iOS-ObjC/CategoriesExtension (from `../`)
+  - WTLibrary-iOS-ObjC/CategoriesExtensionMD5 (from `../`)
+  - WTLibrary-iOS-ObjC/MetadataRetriever (from `../`)
+  - WTLibrary-iOS-ObjC/WTDatabase (from `../`)
+  - WTLibrary-iOS-ObjC/WTDropbox (from `../`)
+  - WTLibrary-iOS-ObjC/WTGoogle (from `../`)
+  - WTLibrary-iOS-ObjC/WTLocation (from `../`)
+  - WTLibrary-iOS-ObjC/WTSNS (from `../`)
+  - WTLibrary-iOS-ObjC/WTStoreKit (from `../`)
+  - WTLibrary-iOS-ObjC/WTSwipeModalView (from `../`)
+  - WTLibrary-iOS-ObjC/WTUIKit (from `../`)
+  - WTLibrary-iOS-ObjC/WTUtaPlayer (from `../`)
 
 EXTERNAL SOURCES:
   WTLibrary-iOS-ObjC:
@@ -22,12 +101,24 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AGWindowView: 08dc8d448b8c96430e78b3945a9c2cf5b0fde754
+  AppAuth: f7d9a2ce4ffe79a62a8b0c1d0938e88d9809b846
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
-  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
+  FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
+  FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  Google: 98da4b1a60ed0beb80a290387a28333406a1eb90
+  GoogleAPIClientForREST: f272e35f7fe9f80ab232756c798adc32245ece8c
+  GoogleSignIn: d7ad83f13480e1f30453471d00d19b5293ac46af
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  GTMAppAuth: ae710e1e53431e2bcdd57f9f92daa16a58a2947d
+  GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
+  GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
+  ObjectiveDropboxOfficial: 69d6d3831e41cf4918e0374b0d1fcb620b238791
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
-  WTLibrary-iOS-ObjC: f218a1730c5ab58322af6c75aa5f3a085ea61058
+  WTLibrary-iOS-ObjC: d90972623ecc5917ab91849b57dd86aaeb8c9845
 
-PODFILE CHECKSUM: e4259a0d8065704f00e646b08f49ac5a656a3ee3
+PODFILE CHECKSUM: b22c701e8b353fe5e59c2492a73a33bca013feee
 
 COCOAPODS: 1.2.0

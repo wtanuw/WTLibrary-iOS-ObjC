@@ -36,5 +36,6 @@
 
 + (void)openItunes;
 
++ (void)openSettingApp;
 
 @end

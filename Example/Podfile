@@ -1,10 +1,20 @@
-use_frameworks!
+#use_frameworks!
 
 target 'WTLibrary-iOS-ObjC_Example' do
   pod 'WTLibrary-iOS-ObjC', :path => '../'
-  
-  #pod 'AGWindowView', '~> 0.1'
-  #pod 'FMDB'
+  pod 'WTLibrary-iOS-ObjC/AQGridViewHorizontal', :path => '../'
+  pod 'WTLibrary-iOS-ObjC/CategoriesExtension', :path => '../'
+  pod 'WTLibrary-iOS-ObjC/CategoriesExtensionMD5', :path => '../'
+  pod 'WTLibrary-iOS-ObjC/MetadataRetriever', :path => '../'
+  pod 'WTLibrary-iOS-ObjC/WTDatabase', :path => '../'
+  pod 'WTLibrary-iOS-ObjC/WTDropbox', :path => '../'
+  pod 'WTLibrary-iOS-ObjC/WTGoogle', :path => '../'
+  pod 'WTLibrary-iOS-ObjC/WTLocation', :path => '../'
+  pod 'WTLibrary-iOS-ObjC/WTSNS', :path => '../'
+  pod 'WTLibrary-iOS-ObjC/WTStoreKit', :path => '../'
+  pod 'WTLibrary-iOS-ObjC/WTSwipeModalView', :path => '../'
+  pod 'WTLibrary-iOS-ObjC/WTUIKit', :path => '../'
+  pod 'WTLibrary-iOS-ObjC/WTUtaPlayer', :path => '../'
   
   target 'WTLibrary-iOS-ObjC_Tests' do
     inherit! :search_paths

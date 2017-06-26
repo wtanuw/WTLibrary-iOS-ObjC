@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WTMacro.h"
 
 #define WTLocation_VERSION 0x00010000
 

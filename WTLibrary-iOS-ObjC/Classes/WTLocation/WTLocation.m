@@ -7,8 +7,7 @@
 //
 
 #import "WTLocation.h"
-
-
+#import "WTMacro.h"
 
 #if WATLOG_DEBUG_ENABLE
 #define WatLog( s, ... ) NSLog( @"WatLog <%@:%d> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__,  [NSString stringWithFormat:(s), ##__VA_ARGS__] )
@@ -74,7 +73,7 @@ static NSString * const kIdentifier = @"SomeIdentifier";
 
 - (void)openSettingApp
 {
-    if SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0"){
+    if(SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")){
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
     }else if (SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(@"5.0")){
         

@@ -11,7 +11,7 @@
 #endif
 
 #import "NSMutableArray+ShiftAdditions.h"
-#import "WTLibrary.h"
+#import "WTMacro.h"
 
 @implementation NSMutableArray (ShiftAdditions)
 

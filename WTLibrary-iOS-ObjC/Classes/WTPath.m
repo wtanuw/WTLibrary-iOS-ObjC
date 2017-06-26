@@ -11,7 +11,7 @@
 #endif
 
 #import "WTPath.h"
-#import <UIKit/UIKit.h>
+#import "WTMacro.h"
 
 @interface WTPath() {
 }
@@ -118,6 +118,13 @@
     else
     {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:httpString]];
+    }
+}
+
++ (void)openSettingApp;
+{
+    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
     }
 }
 

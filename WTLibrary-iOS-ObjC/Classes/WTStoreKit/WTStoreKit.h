@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <StoreKit/StoreKit.h>
-#import "WTMacro.h"
 
 #define WTStoreKit_VERSION 0x00020004
 

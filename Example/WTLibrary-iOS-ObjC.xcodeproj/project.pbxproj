@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05ADA956DB5C17F6355628F8 /* libPods-WTLibrary-iOS-ObjC_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 090EFDE332DE4F55D1DC3D54 /* libPods-WTLibrary-iOS-ObjC_Example.a */; };
+		1D69684A0DDAD10E6EF63E62 /* libPods-WTLibrary-iOS-ObjC_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0903B1D8581A49A2621E5D /* libPods-WTLibrary-iOS-ObjC_Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,8 +24,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		998614BF3BE2BEDBDA91BCAC /* Pods_WTLibrary_iOS_ObjC_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B56FA9AE0AA1445ACBE797 /* Pods_WTLibrary_iOS_ObjC_Tests.framework */; };
-		D4E66850240B356A94080D18 /* Pods_WTLibrary_iOS_ObjC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0D734D313347A9C7A34B34 /* Pods_WTLibrary_iOS_ObjC_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090EFDE332DE4F55D1DC3D54 /* libPods-WTLibrary-iOS-ObjC_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WTLibrary-iOS-ObjC_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A59BC3C1ECFE3EE89158D83 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2E1357089C58DFB7C77AEE54 /* Pods-WTLibrary-iOS-ObjC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTLibrary-iOS-ObjC_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTLibrary-iOS-ObjC_Example/Pods-WTLibrary-iOS-ObjC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		38D8CF177AB25E6001D18C2A /* Pods-WTLibrary-iOS-ObjC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTLibrary-iOS-ObjC_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTLibrary-iOS-ObjC_Example/Pods-WTLibrary-iOS-ObjC_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,10 +63,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8265B14908D755385A50706B /* Pods-WTLibrary-iOS-ObjC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTLibrary-iOS-ObjC_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTLibrary-iOS-ObjC_Tests/Pods-WTLibrary-iOS-ObjC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		87B56FA9AE0AA1445ACBE797 /* Pods_WTLibrary_iOS_ObjC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTLibrary_iOS_ObjC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0903B1D8581A49A2621E5D /* libPods-WTLibrary-iOS-ObjC_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WTLibrary-iOS-ObjC_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C552895A4DB809A72062EC58 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C6919CEC33F936D4EC3A85EF /* Pods-WTLibrary-iOS-ObjC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTLibrary-iOS-ObjC_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTLibrary-iOS-ObjC_Tests/Pods-WTLibrary-iOS-ObjC_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CE0D734D313347A9C7A34B34 /* Pods_WTLibrary_iOS_ObjC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTLibrary_iOS_ObjC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC29ACE1D511681EB1FB920 /* WTLibrary-iOS-ObjC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "WTLibrary-iOS-ObjC.podspec"; path = "../WTLibrary-iOS-ObjC.podspec"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				D4E66850240B356A94080D18 /* Pods_WTLibrary_iOS_ObjC_Example.framework in Frameworks */,
+				05ADA956DB5C17F6355628F8 /* libPods-WTLibrary-iOS-ObjC_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				998614BF3BE2BEDBDA91BCAC /* Pods_WTLibrary_iOS_ObjC_Tests.framework in Frameworks */,
+				1D69684A0DDAD10E6EF63E62 /* libPods-WTLibrary-iOS-ObjC_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +123,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				CE0D734D313347A9C7A34B34 /* Pods_WTLibrary_iOS_ObjC_Example.framework */,
-				87B56FA9AE0AA1445ACBE797 /* Pods_WTLibrary_iOS_ObjC_Tests.framework */,
+				090EFDE332DE4F55D1DC3D54 /* libPods-WTLibrary-iOS-ObjC_Example.a */,
+				8D0903B1D8581A49A2621E5D /* libPods-WTLibrary-iOS-ObjC_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
