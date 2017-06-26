@@ -22,7 +22,7 @@ pod 'WTLibrary-iOS-ObjC/WTDropbox', :git => 'https://github.com/wtanuw/WTLibrary
 ```
 
 ```ruby
-pod 'WTLibrary-iOS-ObjC/WTDropbox', :git => 'https://github.com/wtanuw/WTLibrary-iOS-ObjC.git' :subspecs => ['WTDropbox', 'WTGoogle']
+pod 'WTLibrary-iOS-ObjC', :git => 'https://github.com/wtanuw/WTLibrary-iOS-ObjC.git', :subspecs => ['WTDropbox', 'WTGoogle']
 ```
 
 ```ruby
@@ -43,21 +43,21 @@ pod 'WTLibrary-iOS-ObjC/WTUtaPlayer', :git => 'https://github.com/wtanuw/WTLibra
 ```
 
 ```ruby
-pod 'WTLibrary-iOS-ObjC/WTDropbox', :git => 'https://github.com/wtanuw/WTLibrary-iOS-ObjC.git' :subspecs => ['AQGridViewHorizontal', 'CategoriesExtension', 'CategoriesExtensionMD5', 'MetadataRetriever', 'WTDatabase', 'WTDropbox', 'WTGoogle', 'WTLocation', 'WTSNS', 'WTStoreKit', 'WTSwipeModalView', 'WTUIKit', 'WTUtaPlayer']
+pod 'WTLibrary-iOS-ObjC', :git => 'https://github.com/wtanuw/WTLibrary-iOS-ObjC.git', :subspecs => ['AQGridViewHorizontal', 'CategoriesExtension', 'CategoriesExtensionMD5', 'MetadataRetriever', 'WTDatabase', 'WTDropbox', 'WTGoogle', 'WTLocation', 'WTSNS', 'WTStoreKit', 'WTSwipeModalView', 'WTUIKit', 'WTUtaPlayer']
 ```
 
 
-:branch => 'dev'
-:tag => '0.7.0'
-:commit => '082f8319af'
+:branch => 'dev'\n
+:tag => '0.7.0'\n
+:commit => '082f8319af'\n
 
-pod 'WTLibrary-iOS-ObjC', '0.1'
-= 0.1 Version 0.1.
-> 0.1 Any version higher than 0.1.
->= 0.1 Version 0.1 and any higher version.
-< 0.1 Any version lower than 0.1.
-<= 0.1 Version 0.1 and any lower version.
-~> 0.1.2 Version 0.1.2 and the versions up to 0.2, not including 0.2. This operator works based on the last component that you specify in your version requirement. The example is equal to >= 0.1.2 combined with < 0.2.0 and will always match the latest known version matching your requirements.
+pod 'WTLibrary-iOS-ObjC', '0.1'\n
+= 0.1 Version 0.1.\n
+> 0.1 Any version higher than 0.1.\n
+>= 0.1 Version 0.1 and any higher version.\n
+< 0.1 Any version lower than 0.1.\n
+<= 0.1 Version 0.1 and any lower version.\n
+~> 0.1.2 Version 0.1.2 and the versions up to 0.2, not including 0.2. This operator works based on the last component that you specify in your version requirement. The example is equal to >= 0.1.2 combined with < 0.2.0 and will always match the latest known version matching your requirements.\n
 
 ## Author
 

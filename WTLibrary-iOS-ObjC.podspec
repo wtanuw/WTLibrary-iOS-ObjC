@@ -107,8 +107,14 @@ s.subspec 'WTGoogle' do |subspec|
 subspec.dependency 'GoogleAPIClientForREST/Drive', '~> 1.1.1'
 subspec.dependency 'GTMOAuth2', '~> 1.1.4'
 subspec.dependency 'GTMAppAuth'
-subspec.dependency 'Google/SignIn'
+#subspec.dependency 'Google/SignIn'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/*.{h,m}'
+subspec.vendored_frameworks = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleAppUtilities.framework'
+subspec.vendored_frameworks = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSignIn.framework'
+subspec.vendored_frameworks = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSignInDependencies.framework'
+subspec.vendored_frameworks = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSymbolUtilities.framework'
+subspec.resource = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSignIn.bundle'
+subspec.frameworks = 'SafariServices', 'SystemConfiguration'
 end
 
 ##################################################
