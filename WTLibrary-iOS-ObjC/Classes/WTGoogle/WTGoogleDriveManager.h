@@ -10,10 +10,10 @@
 #import "GTMOAuth2ViewControllerTouch.h"
 #import "GTLRDrive.h"
 #import "WTMacro.h"
-#import <Google/SignIn.h>
+//#import <Google/SignIn.h>
 //#import <GoogleSignIn/GoogleSignIn.h>
-//#import "GoogleSignIn/GoogleSignIn.h"
-//#import "GoogleSignIn/GoogleSignIn.h"
+#import "GoogleSignIn/GoogleSignIn.h"
+//#import "GoogleSignIn.h"
 
 
 #define WTGoogleDriveManager_VERSION 0x00010000

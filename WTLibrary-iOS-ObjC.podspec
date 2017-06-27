@@ -108,10 +108,11 @@ subspec.dependency 'GTMOAuth2', '~> 1.1.4'
 subspec.dependency 'GTMAppAuth'
 #subspec.dependency 'Google/SignIn'
 subspec.source_files = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/*.{h,m}'
-#subspec.vendored_frameworks = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleAppUtilities.framework', 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSignIn.framework', 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSignInDependencies.framework', 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSymbolUtilities.framework'
+subspec.vendored_frameworks = ['WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleAppUtilities.framework', 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSignIn.framework', 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSignInDependencies.framework', 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSymbolUtilities.framework']
 subspec.resource = 'WTLibrary-iOS-ObjC/Classes/WTGoogle/GoogleSignIn.bundle'
-subspec.frameworks = 'SafariServices', 'SystemConfiguration'
-#, 'GoogleAppUtilities', 'GoogleSignIn', 'GoogleSignInDependencies', 'GoogleSymbolUtilities'
+subspec.frameworks = 'SafariServices', 'SystemConfiguration', 'GoogleAppUtilities', 'GoogleSignIn', 'GoogleSignInDependencies', 'GoogleSymbolUtilities'
+subspec.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC', 'LIBRARY_SEARCH_PATHS' => '"${PODS_ROOT}/GoogleSignIn/Frameworks"', 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/GoogleSignIn/Frameworks"','FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/GoogleSignIn/Frameworks"' }
+subspec.header_dir = '{PODS_ROOT}/../../WTLibrary-iOS-ObjC/Classes/WTGoogle'
 end
 
 ##################################################
